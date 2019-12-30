@@ -1,0 +1,61 @@
+Comando para Exercício 2b
+
+    nasm -f elf64 Exercicio2_b.s -o Exercicio2_b.o
+    ld Exercicio2_b.o -o Exercicio2_b
+    time ./Exercicio2_b 
+
+Execuções
+
+   Execução 1: 34.435644 segundos
+   Execução 2: 34.228685 segundos
+   Execução 3: 34.512086 segundos
+   Execução 4: 34.471958 segundos
+   Execução 5: 35.418724 segundos
+   Execução 6: 35.194309 segundos
+   Execução 7: 34.483648 segundos
+   Execução 8: 34.256224 segundos
+   Execução 9: 34.256339 segundos
+   Execução 10: 34.378085 segundos
+   Execução 11: 34.465600 segundos
+   Execução 12: 35.845074 segundos
+   Execução 13: 34.904967 segundos
+   Execução 14: 34.319449 segundos
+   Execução 15: 34.402653 segundos
+   
+   Média: 34.63822965621948
+   Máximo: 35.84507441520691
+   Mínimo: 34.22868490219116
+
+
+Comando para Exercício 2c
+
+    nasm -f elf64 Exercicio2_c.s -o Exercicio2_c.o
+    ld Exercicio2_c.o -o Exercicio2_c
+    time ./Exercicio2_c
+
+    Execução 1: 7.013681 segundos
+    Execução 2: 6.874347 segundos
+    Execução 3: 6.969385 segundos
+    Execução 4: 6.852867 segundos
+    Execução 5: 7.073461 segundos
+    Execução 6: 6.868247 segundos
+    Execução 7: 7.255786 segundos
+    Execução 8: 10.384302 segundos
+    Execução 9: 7.363617 segundos
+    Execução 10: 6.938133 segundos
+    Execução 11: 7.089837 segundos
+    Execução 12: 6.861605 segundos
+    Execução 13: 7.004498 segundos
+    Execução 14: 6.843495 segundos
+    Execução 15: 6.760172 segundos
+
+    Média: 7.210228776931762
+    Máximo: 10.384301900863647
+    Mínimo: 6.760171890258789
+
+Como pode-se ver no arquivo do Exercicio2_b.s que usa o menor numero de registradores possível, e o Exercicio2_c.s que usa o menor numero de acesso a memoria.
+
+Porem se formos comparar o tempo de execução deles, como mostra o texto acima o menor uso de registrador teve um tempo médio de 34.63 segundos, já o que usa o
+menor numero de acesso a memoria teve tempo médio de 7.21 segundos. 
+
+Isto e o uso de registrador comparado a memoria resultou em uma velocidade de exceção de 4.8 vezes.
